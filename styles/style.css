@@ -25,16 +25,12 @@
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-  height: 568px;
+  position: absolute;
+  right: 0;
+  top: 64px;
   width: 568px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  height: 568px;
+  background-color: #2f80ed;
 }
 
 .logo_place_header {
@@ -72,15 +68,6 @@
   z-index: 6;
   background-image: url("../images/header-image.png");
   background-size: cover;
-}
-
-.header__square-pic {
-  position: absolute;
-  right: 0;
-  top: 64px;
-  width: 568px;
-  height: 568px;
-  background-color: #2f80ed;
 }
 
 .description {
@@ -279,7 +266,11 @@ a {
 
 .table__cell_theme_dark {
   width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
 }
+
 .footer {
   padding: 60px 0 40px;
   background-color: #1f1f1f;
