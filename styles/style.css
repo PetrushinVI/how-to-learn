@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -19,7 +23,7 @@
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
-  /*position: relative;*/
+  position: relative;
   /* выше установили ограничения для секции */
 }
 
@@ -33,17 +37,25 @@
   background-color: #2f80ed;
 }
 
+.logo{
+  width: 228px;
+  height: 32px;
+}
+
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-  width: 228px;
-  height: 32px;
+  z-index: 10;
 }
 
 .header__title {
   margin-left: 64px;
   width: 730px;
+  z-index: 9;
+}
+
+h1 {
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -57,6 +69,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 8;
 }
 
 .header__main-illustration {
@@ -98,6 +111,10 @@
   font-weight: normal;
 }
 
+.two-columns__paragraph {
+  margin-bottom: 30px;
+}
+
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
@@ -117,6 +134,7 @@
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .table_text_bank {
@@ -171,7 +189,7 @@ h4, h5, p {
   flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: -2;
+  z-index: 0;
   overflow: hidden;
   padding: 90px 0 90px;
   box-sizing: content-box;
@@ -215,10 +233,6 @@ h4, h5, p {
   text-decoration: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 .section-title_theme_dark{
   width: 60%;
   margin: 0 auto 20px;
@@ -257,7 +271,7 @@ a {
   right: -210px;
   width: 877px;
   height: 877px;
-  z-index: -1;
+  z-index: 1;
   background-image: url("../images/kaufman-triangle.svg");
   background-size: 877px 877px;
   background-repeat: no-repeat;
@@ -272,7 +286,7 @@ a {
 }
 
 .footer {
-  padding: 60px 0 40px;
+  padding: 60px 5% 40px 5%;
   background-color: #1f1f1f;
   min-height: 350px;
   display: flex;
@@ -281,9 +295,8 @@ a {
 .footer__columns {
   display: flex;
   justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
   align-self: stretch;
+  width: 100%;
 }
 
 .footer__column_content_copyright {
@@ -295,8 +308,7 @@ a {
 }
 
 .logo_place_footer {
-  width: 228px;
-  height: 32px;
+  background-image: url("../images/logo_place_footer.svg");
 }
 
 .footer__author {
@@ -329,4 +341,6 @@ a {
   color: #f2f2f2;
 }
 
-
+.footer__column-links {
+ color: #f2f2f2;
+}
