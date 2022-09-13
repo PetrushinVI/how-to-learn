@@ -112,7 +112,7 @@
   margin: 0 0 30px;
 }
 
-.two-columns__paragraph:nth-of-type(3) {
+.two-columns__paragraph:last-of-type {
   margin: 0;
 }
 
@@ -136,10 +136,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 10;
-}
-
-.table__text_indent {
-  margin-top: 20px;
 }
 
 .table__cell {
@@ -178,6 +174,11 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
+}
+
+.table__text:nth-of-type(2n) {
+  margin-top: 20px;
 }
 
 .kaufman {
@@ -326,8 +327,6 @@
   width: 16px;
   height: 16px;
   margin-right: 10px;
-  color: #f2f2f2;
-  text-decoration: none;
 }
 
 .footer__column-heading {
